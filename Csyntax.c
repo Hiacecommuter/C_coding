@@ -23,6 +23,10 @@ printf("%c\n", a);
 printf("%s\n", read_word);
 printf("%s", read_line);
   
+//pointers int *p = &a; *p will return the value
+
+
+  
   
   
 }
