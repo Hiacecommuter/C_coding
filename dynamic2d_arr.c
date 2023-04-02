@@ -45,4 +45,16 @@ int (*arr)[row][col] = malloc(sizeof *arr);
 //5                      
 int (*arr)[col] = calloc(row, sizeof *arr);
                       
+// 6 resize each newline after reading it
+    int n;
+    scanf("%d", &n);
+  
+    char** arr;
+	arr = (char**)malloc(n * sizeof(char*));
+  
+    for(int i = 0; i < n; i++){
+        *(arr + i) = malloc(1024 * sizeof(char));
+        scanf("%s", *(arr + i));
+        *(arr + i) = realloc(*(arr + i), strlen(*(arr + i)) + 1);
+    }
   
