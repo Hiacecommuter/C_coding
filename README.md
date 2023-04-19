@@ -1,2 +1,1 @@
-# CvsCplusplus
-about c and c++ 
+Knowledge about C
